@@ -1,17 +1,76 @@
 ---
 layout: base.html
-title: Home
 ---
-<div class="max-w-lg mx-auto mt-6 px-4 text-center">
-  <h1 class="font-semibold text-3xl">It’s (j)ust (e)leventy and (t)ailwind</h1>
-  <p>…OK, and a few other things; it's still *really* small though.</p>
-</div>
-<p class="flex items-center justify-center max-w-md mt-6 mx-auto px-4">
-  <a href="https://www.11ty.dev/" class="bg-gray-900 inline-block mr-6"><img src="img/11ty.svg" alt="Eleventy" class="h-24" /></a>
-  and
-  <a href="https://tailwindcss.com/" class="ml-6"><img src="img/tailwindcss.svg" alt="Tailwind CSS" class="w-64" /></a>
-</p>
-<p class="flex justify-center max-w-md mt-16 mx-auto">
-  <a href="https://github.com/marcamos/jet#readme" class="mr-6 underline">View on GitHub</a>
-  <a href="https://marcamos-jet.netlify.com/" class="underline">View on Netlify</a>
-</p>
+<section id="sidebar" class="">
+  <div class="py-6 md:py-0 w-64 min-w-full">
+    <div class="align-center px-6 py-0 md:px-6 flex flex-col md:h-full ">
+      <div class="pb-1">
+        <h2 class="pb-2 text-white font-bold text-5xl items-baseline">Nicolas Dabreo</h2>
+        <h3 class="text-lg text-gray-300">Full Stack Developer & Elixir Enthusiast</h3>
+        <h3 class="text-lg text-gray-300">Currently building cool stuff at: <a class="underline hover:text-gray-300" href="https://stitched.co.uk">Stitched</a></h3>
+      </div>
+
+      <div class="flex">
+        <a class="m-2 text-3xl" href="https://www.linkedin.com/in/nickdabreo/" target="_blank" rel="noopener noreferrer" alt="Link to my LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a class="m-2 text-3xl" href="https://github.com/Dabsy/" target="_blank" rel="noopener noreferrer" alt="Link to my GitHub"><i class="fab fa-github"></i></a>
+        <a class="m-2 text-3xl" href="mailto: nickj.dabreo@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="">
+	<div class="pb-6 md:pt-12 md:pb-6 px-6 h-full">
+		<div class="w-full mb-6 pb-2 w-48">
+			<a class="" href="https://stitched.com" rel="noreferrer noopener" alt="Link to https://stitched.co.uk">
+				<img src="/img/stitchedlogo.png" style="width: 8rem;" class="pb-3" alt="Stitched Logo" />
+			</a>
+
+			<div class="border-l pl-6 last:mb-0 mb-6">
+				{%- for project in collections.stitched %}
+					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to {{ project.data.link }}">	
+						<div class="my-4">
+							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
+						</div>
+						
+						<p class="text-sm pb-1">{{project.data.tagline}}</p>
+					</a>
+				{%- endfor %}
+			</div>	
+		</div>
+
+		<div class="w-full mb-6 pb-2 w-48">
+			<a class="" href="https://square-enix-games.com" rel="noreferrer noopener" alt="Link to https://square-enix-games.com">
+				<img src="/img/se-logo.svg" style="width: 12rem;" class="pb-3" alt="Square Enix Logo" />
+			</a>
+
+			<div class="border-l pl-6 last:mb-0 mb-6">
+				{%- for project in collections.square_enix %}
+					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to {{ project.data.link }}">	
+						<div class="my-4">
+							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
+						</div>
+						
+						<p class="text-sm pb-1">{{project.data.tagline}}</p>
+					</a>
+				{%- endfor %}
+			</div>	
+		</div>
+
+		<!-- <div class="w-full mb-6 pb-2 w-48">
+			<h1 class="text-white font-bold text-2xl flex items-baseline">Side Projects</h1>
+
+			<div class="border-l pl-6 last:mb-0 mb-6">
+				{%- for project in collections.personal %}
+					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to https://square-enix-games.com">	
+						<div class="my-4">
+							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
+						</div>
+						
+						<p class="text-sm pb-1">{{project.data.tagline}}</p>
+					</a>
+				{%- endfor %}
+			</div>	
+		</div> -->
+  	</div>
+</section>

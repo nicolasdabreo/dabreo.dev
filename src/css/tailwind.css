@@ -3,3 +3,69 @@
 @tailwind components;
 
 @tailwind utilities;
+
+/* Tailwind @apply directives will be processed by PostCSS after the SASS rendering takes place */
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  font-size: 1.6rem;
+}
+a {
+  color: #fff;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+html {
+  font: 112.5%/1.45rem georgia, serif;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  background: #111;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  margin: 0 1rem;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+hr {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  margin-bottom: calc(1.45rem - 1px);
+  background: hsla(0, 0%, 0%, 0.2);
+  border: none;
+  background: #fff;
+  box-sizing: content-box;
+  height: 2px;
+  margin: 0 10vw;
+}
+li > ol {
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
+}
+li > ul {
+  margin-left: 1.45rem;
+  margin-bottom: calc(1.45rem / 2);
+  margin-top: calc(1.45rem / 2);
+}
