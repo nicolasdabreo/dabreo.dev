@@ -1,76 +1,34 @@
 ---
 layout: base.html
 ---
-<section id="sidebar" class="">
+<section class="max-w-xl">
   <div class="py-6 md:py-0 w-64 min-w-full">
     <div class="align-center px-6 py-0 md:px-6 flex flex-col md:h-full ">
       <div class="pb-1">
-        <h2 class="pb-2 text-white font-bold text-5xl items-baseline">Nicolas Dabreo</h2>
-        <h3 class="text-lg text-gray-300">Full Stack Developer & Elixir Enthusiast</h3>
-        <h3 class="text-lg text-gray-300">Currently building cool stuff at: <a class="underline hover:text-gray-300" href="https://stitched.co.uk">Stitched</a></h3>
-      </div>
-
-      <div class="flex">
-        <a class="m-2 text-3xl" href="https://www.linkedin.com/in/nickdabreo/" target="_blank" rel="noopener noreferrer" alt="Link to my LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a class="m-2 text-3xl" href="https://github.com/Dabsy/" target="_blank" rel="noopener noreferrer" alt="Link to my GitHub"><i class="fab fa-github"></i></a>
-        <a class="m-2 text-3xl" href="mailto: nickj.dabreo@gmail.com"><i class="far fa-envelope"></i></a>
+        <h1 class="pb-2 text-white font-bold text-5xl items-baseline">Nicolas Dabreo</h1>
+		<a class="m-2 ml-0 text-3xl inline-block" href="https://www.linkedin.com/in/nickdabreo/" target="_blank" rel="noopener noreferrer" alt="Link to my LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+		<a class="m-2 text-3xl inline-block" href="https://github.com/Dabsy/" target="_blank" rel="noopener noreferrer" alt="Link to my GitHub"><i class="fab fa-github"></i></a>
+		<a class="m-2 text-3xl inline-block" href="mailto: nickj.dabreo@gmail.com"><i class="far fa-envelope"></i></a>
+		<p class="text-lg text-gray-300">Full Stack Developer & Elixir Enthusiast</p>
+		<p class="text-lg text-gray-300">Currently building cool stuff at: <a class="underline hover:text-gray-300" href="https://stitched.co.uk">Stitched</a></p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="">
+<!-- might want this for madcool -->
+<!-- <section class="max-w-xl px-6 mt-8">
+	<h2 class="text-lg text-gray-300">Side Projects</h2>
+
+	<article class="w-64 h-72 mr-4 max-w-xs transform hover:scale-105 overflow-hidden rounded-lg shadow-md bg-purple-900 hover:shadow-xl transition-all duration-200 ease-in-out">
+		<article class="w-full h-full flex justify-center px-4" href="https://square-enix-games.com" rel="noreferrer noopener" alt="Link to https://square-enix-games.com">
+			<img src="/img/se-logo.svg" class="m-auto" alt="Square Enix Logo" />
+		</a>
+	</article>
+</section> -->
+
+<!-- <section class="max-w-xl">
+	<h2 class="px-6 text-lg text-gray-300">Side Projects</h2>
+
 	<div class="pb-6 md:pt-12 md:pb-6 px-6 h-full">
-		<div class="w-full mb-6 pb-2 w-48">
-			<a class="" href="https://stitched.com" rel="noreferrer noopener" alt="Link to https://stitched.co.uk">
-				<img src="/img/stitchedlogo.png" style="width: 8rem;" class="pb-3" alt="Stitched Logo" />
-			</a>
-
-			<div class="border-l pl-6 last:mb-0 mb-6">
-				{%- for project in collections.stitched %}
-					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to {{ project.data.link }}">	
-						<div class="my-4">
-							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
-						</div>
-						
-						<p class="text-sm pb-1">{{project.data.tagline}}</p>
-					</a>
-				{%- endfor %}
-			</div>	
-		</div>
-
-		<div class="w-full mb-6 pb-2 w-48">
-			<a class="" href="https://square-enix-games.com" rel="noreferrer noopener" alt="Link to https://square-enix-games.com">
-				<img src="/img/se-logo.svg" style="width: 12rem;" class="pb-3" alt="Square Enix Logo" />
-			</a>
-
-			<div class="border-l pl-6 last:mb-0 mb-6">
-				{%- for project in collections.square_enix %}
-					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to {{ project.data.link }}">	
-						<div class="my-4">
-							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
-						</div>
-						
-						<p class="text-sm pb-1">{{project.data.tagline}}</p>
-					</a>
-				{%- endfor %}
-			</div>	
-		</div>
-
-		<!-- <div class="w-full mb-6 pb-2 w-48">
-			<h1 class="text-white font-bold text-2xl flex items-baseline">Side Projects</h1>
-
-			<div class="border-l pl-6 last:mb-0 mb-6">
-				{%- for project in collections.personal %}
-					<a class="text-white hover:text-gray-300" href="{{ project.data.link }}" rel="noreferrer noopener" alt="Link to https://square-enix-games.com">	
-						<div class="my-4">
-							<h2 class="font-bold text-2xl flex items-baseline">{{project.data.title}}</h2>
-						</div>
-						
-						<p class="text-sm pb-1">{{project.data.tagline}}</p>
-					</a>
-				{%- endfor %}
-			</div>	
-		</div> -->
-  	</div>
-</section>
+</section> -->
