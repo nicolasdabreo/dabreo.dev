@@ -1,0 +1,33 @@
+---
+title: "Nicolas Dabreo"
+permalink: "/"
+description: ""
+---
+
+<article class="prose-sm prose prose-zinc">
+    <header>
+        <h1>I'm Nicolas Dabreo</h1>
+    </header>
+    
+    <h2>Here's some info about me</h2>
+
+    <ul>
+        <li>Full-Stack Web Developer</li>
+        <li>Elixir and LiveView application enthusiast</li>
+        <li>Passionate about accessibility, simplicity and clarity</li>
+        <li>I have a <a class="font-semibold" href="/blog">blog</a> where I talk about the above</li>
+        <li>Director of <a class="font-semibold" href="https://megalixir.co.uk">Megalixir Ltd.</a></li>
+    </ul>
+
+    <h2>You can find me at</h2>
+
+    <nav>
+        <ul class="flex flex-col">
+            {% for item in socials.items %}
+                <li>
+                    <a class="font-semibold" href="{{ item.url | url }}">{{ item.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</article>

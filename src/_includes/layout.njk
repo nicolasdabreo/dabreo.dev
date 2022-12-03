@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script type="text/javascript" src="/assets/js/script.js" defer></script>
+    <title>{{ title }}</title>
+  </head>
+
+  <head>    
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Nicolas Dabreo | Full Stack Developer">
+    <meta name="description" content="Full Stack Developer & Elixir Enthusiast">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dabreo.dev/">
+    <meta property="og:title" content="Nicolas Dabreo | Full Stack Developer">
+    <meta property="og:description" content="Full Stack Developer & Elixir Enthusiast">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dabreo.dev/">
+    <meta property="twitter:title" content="Nicolas Dabreo | Full Stack Developer">
+    <meta property="twitter:description" content="Full Stack Developer & Elixir Enthusiast">
+    <meta property="twitter:image" content="">
+
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <script type="text/javascript" src="/assets/js/script.js" defer></script>
+  </head>
+  
+  <body class="relative min-h-screen px-8 py-24 font-mono bg-neutral-50">    
+    <main class="flex flex-col max-w-md mx-auto space-y-6 sm:max-w-2xl">
+      {{ content | safe }}
+    </main>
+
+    <footer class="absolute bottom-0 left-0 flex items-center justify-center w-full text-sm h-36 text-zinc-600">
+      Made by Nicolas Dabreo
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+          "text": "github (work)",
+          "url": "https://github.com"
+        },
+        {
+            "text": "gitlab (personal)",
+            "url": "https://gitlab.com"
+        },
+        {
+          "text": "linkedin",
+          "url": "https://linkedin.com"
+        },
+        {
+          "text": "elixir forum",
+          "url": "https://elixirforum.com"
+        }
+    ]
+}
