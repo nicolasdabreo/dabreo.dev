@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full antialiased dark js-focus-visible">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -35,13 +35,9 @@
     <script type="text/javascript" src="/assets/js/script.js" defer></script>
   </head>
   
-  <body class="relative min-h-screen px-8 py-24 font-mono bg-neutral-50">    
-    <main class="flex flex-col max-w-md mx-auto space-y-6 sm:max-w-2xl">
+  <body class="flex flex-col h-full bg-white -full ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20">    
+    <main class="mx-auto mt-16 sm:px-8 sm:mt-32 ">
       {{ content | safe }}
     </main>
-
-    <footer class="absolute bottom-0 left-0 flex items-center justify-center w-full text-sm h-36 text-zinc-600">
-      Made by Nicolas Dabreo
-    </footer>
   </body>
 </html>

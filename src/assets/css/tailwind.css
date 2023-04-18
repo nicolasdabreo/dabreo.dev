@@ -7,13 +7,13 @@ body {
     @apply overflow-x-hidden text-base text-zinc-700;
 }
 
-a {
+.fancy-link {
     @apply transition-all duration-150 ease-in-out bg-no-repeat cursor-pointer underline-offset-4 bg-gradient-to-r from-purple-500 to-blue-500;
     background-position: 0 100%;
     background-size: 0 3px;
 }
 
-a:hover {
+.fancy-link:hover {
     background-size: 100% 3px;
     background-position: 0 100%
 }
